@@ -1,278 +1,763 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;600&family=Wix+Madefor+Text&family=Ysabeau+Office:wght@100;200;400;500;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;600&family=Wix+Madefor+Text&family=Ysabeau+Office:wght@100;200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Mins 90s, BR 31</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header_wrapper">
-            <img class="site_logo" src="./images/BR31logo.png" alt="logo" width="80" height="80">
-            <ul>
-                <div class="site_menu">
-                    <li><a href="#flavors">Flavors</a></li>
-                    <li><a href="#favorites">Favorites</a></li>
-                    <li><a href="#media">Media</a></li>
-                    <li><a href="#funfacts">Fun Facts</a></li>
-                </div>
-            </ul>
-            <img class="site_hamburger" src="./images/bars-solid.svg" alt="hamburger">
+      <div class="header_wrapper">
+        <img
+          class="site_logo"
+          src="./images/BR31logo.png"
+          alt="logo"
+          width="80"
+          height="80"
+        />
+
+        <nav class="nav_bar">
+        <div class="nav_menu">
+          <a href="#flavors">Flavors</a>
+          <a href="#favorites">Favorites</a>
+          <a href="#media">Media</a>
+          <a href="#funfacts">Fun Facts</a>
         </div>
+          <div class="hamburger">
+            <label for="checkbox">
+              <input class="hamburger_checkbox" id="checkbox" type="checkbox" />
+              <img
+                class="hamburger_icon"
+                src="./images/bars-solid.svg"
+                alt="menu"
+              />
+            </label>
+          </div>
+        </div>
+      </nav>
+      </div>
     </header>
     <!-- content -->
     <main class="content">
-        <div class="content_wrapper">
-            <!-- gif and survey -->
-            <section class="content_gif">
-                <img class="content_image" src="./images/ice cream eating girl gif.gif" alt="" width="300" height="300">
-                <div class="content_survey">
-                    <h3>What is your favorite flavor?</h3>
-                    <input class="content_survey_input" type="text" placeholder="Type your favorite flavor here">
-                    <button class="content_survey_button">Submit</button>
+      <div class="content_wrapper">
+        <!-- gif and survey -->
+        <section class="content_gif">
+          <img
+            class="content_image"
+            src="./images/ice cream eating girl gif.gif"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <div class="content_survey">
+            <h3>What is your favorite flavor?</h3>
+            <input
+              class="content_survey_input"
+              id="content_survey"
+              type="text"
+              placeholder="Type your favorite flavor here"
+            />
+            <button
+              class="content_survey_button"
+              id="content_survey"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </section>
+        <!-- flavour gallery -->
+        <section class="content_flavors">
+          <div class="content_flavors_wrapper" id="flavors">
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg1.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Baseball Nut</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg2.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Chocolate Chip Cookie Dough</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg3.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Chocolate Chip</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg4.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Chocolate Chip Royale</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg5.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Chocolate</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg6.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Citrus Twist Latin Lemon</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg7.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Cookies N Cream</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg8.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Cotton Candy</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg9.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Gold Medal Ribbon</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg10.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>It takes two to Mango</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg11.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Jamoca Almond Fudge</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg12.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Very Berry Strawberry</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg13.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Maui Brownie Madness</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg14.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Mint Chocolate Chip</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg15.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Rainbow Sherbet</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg16.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Pistachio Almond</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg17.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>No Sugar Added Caramel Turtle</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg18.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Peanut Butter N Chocolate</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg19.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Pralines N Cream</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg20.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Strawberry cheese Cake</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg21.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Vanilla</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg22.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>Love Portion #31</figcaption>
+            </div>
+            <div class="gallery_item">
+              <figure>
+                <img
+                  src="./images/icimg23.jpg"
+                  alt="productimg"
+                  width="80"
+                  height="80"
+                />
+              </figure>
+              <figcaption>World Class Chocolate</figcaption>
+            </div>
+          </div>
+        </section>
+        <!-- my favorites -->
+        <section class="content_favorites">
+          <div class="content_favorites_wrapper" id="favorites">
+            <div class="favorites_gallery">
+              <div class="favorites_items_inner">
+                <div class="favorites_items_front">
+                  <img
+                    class="favorites_items"
+                    src="./images/iccake.png"
+                    alt="Gingerbread Man Ice Cream Cake"
+                    width="400"
+                    height="400"
+                  />
                 </div>
-            </section>
-            <!-- flavour gallery -->
-            <section class="content_flavors">
-                <div class="content_flavors_wrapper" id="flavors">
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg1.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Baseball Nut</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg2.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Chocolate Chip Cookie Dough</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg3.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Chocolate Chip</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg4.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Chocolate Chip Royale</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg5.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Chocolate</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg6.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Citrus Twist Latin Lemon</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg7.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Cookies N Cream</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg8.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Cotton Candy</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg9.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Gold Medal Ribbon</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg10.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>It takes two to Mango</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg11.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Jamoca Almond Fudge</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg12.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Very Berry Strawberry</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg13.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Maui Brownie Madness</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg14.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Mint Chocolate Chip</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg15.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Rainbow Sherbet</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg16.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Pistachio Almond</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg17.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>No Sugar Added Caramel Turtle</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg18.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Peanut Butter N Chocolate</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg19.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Pralines N Cream</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg20.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Strawberry cheese Cake</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg21.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Vanilla</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg22.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>Love Portion #31</figcaption>
-                    </div>
-                    <div class="gallery_item">
-                        <figure><img src="./images/icimg23.jpg" alt="productimg" width="80" height="80"></figure>
-                        <figcaption>World Class Chocolate</figcaption>
-                    </div>
+                <div class="favorites_items_back">
+                  <p>Gingerbread Man Ice Cream Cake</p>
                 </div>
-            <!-- my favorites -->
-            <section class="content_favorites">
-                <div class="content_favorites_wrapper" id="favorites">
-                    <div class="favorites_items" id="favorites">
-                    <figure><img  src="./images/Single-Value-Cone.jpg" alt="cone" width="60" height="80"></figure>
-                    <figcaption>Cookies and Cream on a cone</figcaption>
-                    </div>
-                    <div class="favorites_items">
-                    <figure><img src="./images/chcolate-thick1.jpg" alt="milkshake" width="70" height="80"></figure>
-                    <figcaption>Milkshake</figcaption>
-                    </div>
-                    <div class="favorites_items">
-                    <figure><img src="./images/Ice_Cream_Macaron_-__637437494216812615.jpg" alt="macaron" width="80" height="80"></figure>
-                    <figcaption>Ice cream macaron</figcaption>
-                    </div>
+              </div>
+              <div class="favorites_items_inner">
+                <div class="favorites_items_front">
+                  <img
+                    class="favorites_items"
+                    src="./images/mochi.png"
+                    alt="Ice Mochi"
+                    width="400"
+                    height="400"
+                  />
                 </div>
-            </section>
-            <!-- media -->
-            <section class="content_media" id="media">
-                <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/aOpHZWjR5AA?si=3TyzpCErQxT2BClP" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-                </iframe>
-
-            </section>
-            <!-- fun facts -->
-            <section class="content_funfacts" id="funfacts">
-                <article class="funfacts_items">
-                    <p><span>1960s</span> - Baskin-Robbins expands nationwide, with more than 400 stores.</p>
-                    <p><span>1964</span> - Beatle Nut hits the stores when Beatle Mania strikes the United States.</p>
-                    <p><span>1965</span> - 0031 Secret Bonded appears in store to celebrate the popular James Bond 007 movie series.</p>
-                    <p><span>1969</span> - Lunar Cheesecake launches as the first man lands on the moon.        </p>
-                </article>
-                <article class="funfacts_items">
-                    <p><span>1970s</span> - Baskin-Robbins expands internationally.</p>
-                    <p><span>1970</span> - Pink Bubble Gum pops in stores.        </p>
-                    <p><span>1976</span> - Valley Forge Fudge honors America’s Bicentennial.</p>
-                </article>
-                <article class="funfacts_items">
-                    <p><span>1980s</span> - Miami Ice hits stores along with TV hit Miami Vice. Along with the preppy craze Baskin-Robbins introduces Preppy Mint.</p>
-                    <p><span>1985</span> - Oreo® Cookies ‘n Cream becomes a new hit flavour.
-            
-                    </p>
-                </article>
-                <article class="funfacts_items">
-                    <p><span>1990s</span> - Gorba Chocolate honors the Soviet Leader and fall of communism.</p>
-                    <p><span>1994</span> - Cappuccino Blast® explodes into stores nationwide.</p>
-                    <p><span>1995</span> - Love Potion #31 starts a Valentine’s Day love affair.</p>
-                </article>
-                <article class="funfacts_items">
-                    <p><span>2002</span> - Shrek Swirl appears in dipping cabinets nationwide.</p>
-                    <p><span>2005</span> - Bold Breezes arrives into stores across the country. Baskin-Robbins opens up the Birthday Club to ice cream lovers of all ages.        </p>
-                    <p><span>2009</span> - Introduction of Soft Serve and 31 Below.</p>
-                </article>
-                <article class="funfacts_items">
-                    <p><span>2012</span> - Celebrate 40 years in Canada!</p>
-                </article>
-                
-            </section>
-    </div>
+                <div class="favorites_items_back">
+                  <p>Ice Mochi</p>
+                </div>
+              </div>
+              <div class="favorites_items_inner">
+                <div class="favorites_items_front">
+                  <img
+                    class="favorites_items"
+                    src="./images/Ice_Cream_Macaron.jpg"
+                    alt="Ice Cream Macaron"
+                    width="800"
+                    height="600"
+                  />
+                </div>
+                <div class="favorites_items_back">
+                  <p>Ice Cream Macaron</p>
+                </div>
+              </div>
+              <div class="favorites_items_inner">
+                <div class="favorites_items_front">
+                  <img
+                    class="favorites_items"
+                    src="./images/iccubecake.png"
+                    alt="Cube Ice Cream Cake"
+                    width="400"
+                    height="400"
+                  />
+                </div>
+                <div class="favorites_items_back">
+                  <p>Cube Ice Cream Cake</p>
+                </div>
+              </div>
+              <div class="favorites_items_inner">
+                <div class="favorites_items_front">
+                  <img
+                    class="favorites_items"
+                    src="./images/milkshake.jpg"
+                    alt="Milkshake"
+                    width="170"
+                    height="180"
+                  />
+                </div>
+                <div class="favorites_items_back">
+                  <p>Milkshake</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- media -->
+        <section class="content_media" id="media">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aOpHZWjR5AA?si=3TyzpCErQxT2BClP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+        <!-- fun facts -->
+        <section class="content_funfacts" id="funfacts">
+          <article class="funfacts_items">
+            <p>
+              <span>1960s</span> - Baskin-Robbins expands nationwide, with more
+              than 400 stores.
+            </p>
+            <p>
+              <span>1964</span> - Beatle Nut hits the stores when Beatle Mania
+              strikes the United States.
+            </p>
+            <p>
+              <span>1965</span> - 0031 Secret Bonded appears in store to
+              celebrate the popular James Bond 007 movie series.
+            </p>
+            <p>
+              <span>1969</span> - Lunar Cheesecake launches as the first man
+              lands on the moon.
+            </p>
+          </article>
+          <article class="funfacts_items">
+            <p><span>1970s</span> - Baskin-Robbins expands internationally.</p>
+            <p><span>1970</span> - Pink Bubble Gum pops in stores.</p>
+            <p>
+              <span>1976</span> - Valley Forge Fudge honors America’s
+              Bicentennial.
+            </p>
+          </article>
+          <article class="funfacts_items">
+            <p>
+              <span>1980s</span> - Miami Ice hits stores along with TV hit Miami
+              Vice. Along with the preppy craze Baskin-Robbins introduces Preppy
+              Mint.
+            </p>
+            <p>
+              <span>1985</span> - Oreo® Cookies ‘n Cream becomes a new hit
+              flavour.
+            </p>
+          </article>
+          <article class="funfacts_items">
+            <p>
+              <span>1990s</span> - Gorba Chocolate honors the Soviet Leader and
+              fall of communism.
+            </p>
+            <p>
+              <span>1994</span> - Cappuccino Blast® explodes into stores
+              nationwide.
+            </p>
+            <p>
+              <span>1995</span> - Love Potion #31 starts a Valentine’s Day love
+              affair.
+            </p>
+          </article>
+          <article class="funfacts_items">
+            <p>
+              <span>2002</span> - Shrek Swirl appears in dipping cabinets
+              nationwide.
+            </p>
+            <p>
+              <span>2005</span> - Bold Breezes arrives into stores across the
+              country. Baskin-Robbins opens up the Birthday Club to ice cream
+              lovers of all ages.
+            </p>
+            <p><span>2009</span> - Introduction of Soft Serve and 31 Below.</p>
+          </article>
+          <article class="funfacts_items">
+            <p><span>2012</span> - Celebrate 40 years in Canada!</p>
+          </article>
+        </section>
+        <section class="content_music">
+          <div class="content_music_wrapper">
+            <iframe
+              class="music_items"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/5Fc0K2H5qHvMYm6FCWJYZS?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+            <iframe
+              class="music_items"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/4JUPEh2DVSXFGExu4Uxevz?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+            <iframe
+              class="music_items"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/0uctd5s1IY9ztCLkVSqI5Z?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+            <iframe
+              class="music_items"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/3XVozq1aeqsJwpXrEZrDJ9?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+            <iframe
+              class="music_items"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/15UB1xAOUIjSYb9xlOA6Wm?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+            <iframe
+              class="music_items"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/6TBGYsimcC1FarPc0I7AYN?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </section>
+      </div>
     </main>
-        <div class="slider">
-            <div class="slide-track">
-            <div class="slide">
-                <img src="./images/icimg1.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg2.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg3.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg4.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg5.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg6.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg7.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg8.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg9.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg10.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg11.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg12.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg13.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg14.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg15.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg16.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg17.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg18.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg19.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg20.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg21.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg22.jpg" alt="productimg" width="70rem">
-            </div>
-            <div class="slide">
-                <img src="./images/icimg23.jpg" alt="productimg" width="70rem">
-            </div>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img
+            src="./images/icimg1.jpg"
+            alt="productimg"
+            width="20"
+            height="20"
+          />
         </div>
+        <div class="slide">
+          <img
+            src="./images/icimg2.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
         </div>
+        <div class="slide">
+          <img
+            src="./images/icimg3.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg4.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg5.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg6.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg7.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg8.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg9.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg10.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg11.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg12.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg13.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg14.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg15.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg16.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg17.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg18.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg19.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg20.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg21.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg22.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="./images/icimg23.jpg"
+            alt="productimg"
+            width="20px"
+            height="20px"
+          />
+        </div>
+      </div>
+    </div>
     <footer class="footer">
-        <small> COPYRIGHT @minimoo</small>
+      <small> COPYRIGHT @minimoo</small>
     </footer>
-</body>
+  </body>
 </html>
